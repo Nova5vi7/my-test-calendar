@@ -1,0 +1,53 @@
+.popap {
+  &__wraper {
+    display: flex;
+    padding: 25px;
+
+    input {
+      max-width: 220px;
+      padding: 14px 0 14px 20px;
+      font: normal 500 22px/27px "Rubik";
+      border: 2px solid #fdd000;
+      box-shadow: 0px 0px 25px #0000000d;
+    }
+  }
+
+  &__wrap {
+    margin-right: 20px;
+  }
+
+  &__title {
+    font: normal 500 20px/24px "Rubik";
+    color: #a2a2a2;
+    opacity: 1;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    background-color: #fdd000;
+
+    svg {
+      width: 13px;
+      height: 13px;
+      opacity: 0.85;
+    }
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .popap {
+    &__wraper {
+      flex-direction: column;
+    }
+
+    &__wrap {
+      margin: 20px 0 0 0;
+    }
+  }
+}

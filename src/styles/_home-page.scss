@@ -1,0 +1,81 @@
+.home-page {
+  height: 100vh - (2 * 4.5vh) - 8vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+
+  &__content {
+    height: 100%;
+    width: 64%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15%;
+    background-image: url(../img/arbord.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__wrap {
+    text-align: right;
+    padding-right: 33px;
+  }
+
+  &__title {
+    max-width: 518px;
+    color: #fdd000;
+    font: normal bold 50px/64px "Rubik";
+    letter-spacing: 3.5px;
+  }
+
+  &__text {
+    max-width: 518px;
+    color: #dfdfdf;
+    font: normal 300 30px/40px "Rubik";
+    letter-spacing: 0.6px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .home-page {
+    flex-direction: column;
+    overflow: visible;
+    &__content {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .home-page {
+    &__content {
+      padding: 15% 20px 0;
+    }
+
+    &__wrap {
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+    }
+    &__title,
+    &__text {
+      max-width: none;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home-page {
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
